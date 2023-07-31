@@ -4,18 +4,16 @@
 
 Ideally the data we wish to work on can be downloaded in an easy to use format. Otherwise when we want only a small subset of a very big dataset, or the data is being constantly updated, hopefully the owner will provide an application programming interface (API) to automate the collection of the relevant data. However quite often the data cannot be downloaded and there is no API, but the data is publicly available, just dispersed across a website. When it would be too tedious and time consuming to navigate page by page to collect the data manually; we can use Selenium Webdriver and Beautiful Soup to automate navigating across the website and collecting of the relevant data. In this code clinic, I will go through the best practices (and what not to do!) when web scraping; using Selenium Webdriver to navigate around a website and then using Beautiful Soup to extract the data from the HTML.
 
-Running in Google colab
------------------------
+### Running in Google colab
 If you do not have a computer that can install python, or just prefer to work through the notebook externally, you can do this in Google colab:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/googlecolab/jpwhalley/2023_INSPIRE-Data_Collection_in_Python/blob/main/inspire_web_scraping_literaryclock_student.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jpwhalley/2023_INSPIRE-Data_Collection_in_Python/blob/main/inspire_web_scraping_literaryclock_student.ipynb)
 
 ---
 
 Otherwise you can follow the guide below to install and run the notebooks on your computer:
 
-Prerequisites
--------------
+### Prerequisites
 
 Please install the following suggested software:
 ------------------------------------------------
@@ -54,8 +52,7 @@ browser.get("[https://www.literaryclock.com](https://www.literaryclock.com/)/“
 
 you should get a pop-up window of the [Literary Clock website](http://www.literaryclock.com/).
 
-Recommended tutorial and reading
---------------------------------
+### Recommended tutorial and reading
 
 *   A good example of scientific work based on web scraping can be found here: [Soft Drinks Industry Levy paper.](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003025)
 *   Another good example of web scraping is the COVID-19 cumulative trackers, for example [Jon Hopkins COVID-19 Dashboard](https://www.arcgis.com/apps/dashboards/bda7594740fd40299423467b48e9ecf6), as published [here](https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30120-1/fulltext), with [Github repository.](https://github.com/CSSEGISandData/COVID-19)
