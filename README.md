@@ -13,22 +13,24 @@ Prerequisites
 ---
 
 *   Selenium: [https://selenium-python.readthedocs.io/](https://selenium-python.readthedocs.io/)I usually use pip or conda to install packages: 
-    *   pip install selenium
+    
+`pip install selenium`
         
-
+  
 or
-
-*   *   conda install -c anaconda selenium
+  
+`conda install -c anaconda selenium`
         
 ---
 
 *   Beautiful Soup: [https://www.crummy.com/software/BeautifulSoup/bs4/doc/](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
-    *   pip install beautifulsoup4
+
+`pip install beautifulsoup4`
         
 
 or
 
-*   *   conda install -c anaconda beautifulsoup4
+`conda install -c anaconda beautifulsoup4`
         
 ---
 
@@ -38,11 +40,11 @@ or
 ---
 
 *   Once you have done that, hopefully running the following code snippet:
-
+```
 from selenium import webdriver  
 browser = webdriver.Firefox() # Or which ever web browser you are using  
 browser.get("[https://www.literaryclock.com](https://www.literaryclock.com/)/“)
-
+```
 you should get a pop-up window of the [Literary Clock website](http://www.literaryclock.com/).
 
 Recommended tutorial and reading
