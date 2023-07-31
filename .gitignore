@@ -138,3 +138,6 @@ dmypy.json
 .Rproj.user
 .Rhistory
 *.Rproj
+
+# Random
+.idea
