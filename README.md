@@ -17,6 +17,11 @@ Otherwise you can follow the guide below to install and run the notebooks on you
 Prerequisites
 -------------
 
+Please install the following suggested software:
+------------------------------------------------
+
+*   [Anaconda3 (for python3 notebooks) (Links to an external site.)](https://www.anaconda.com/download/) We will mainly be using python notebooks for this session.
+
 For this session, you will need:
 
 *   Python3, I will be sharing a Python Notebook for everyone to work through with me (as discussed in the course [To do before the start](https://canvas.ox.ac.uk/courses/112935/pages/to-do-before-start "To do before start")).
