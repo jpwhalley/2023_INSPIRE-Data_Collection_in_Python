@@ -8,33 +8,31 @@ Prerequisites
 -------------
 ### Please install the following suggested software:
 
-*   [Anaconda3 (for python3 notebooks) (Links to an external site.)](https://www.anaconda.com/download/) We will mainly be using python notebooks for this session.
-
-
-*   Selenium: [https://selenium-python.readthedocs.io/](https://selenium-python.readthedocs.io/)I usually use pip or conda to install packages: 
+1. [Anaconda3 (for python3 notebooks) (Links to an external site.)](https://www.anaconda.com/download/) We will mainly be using python notebooks for this session.  
+  
+  
+2. Selenium: [https://selenium-python.readthedocs.io/](https://selenium-python.readthedocs.io/)I usually use pip or conda to install packages: 
     
 `pip install selenium`
-        
   
 or
   
 `conda install -c anaconda selenium`
-        
-
-*   Beautiful Soup: [https://www.crummy.com/software/BeautifulSoup/bs4/doc/](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+  
+  
+3. Beautiful Soup: [https://www.crummy.com/software/BeautifulSoup/bs4/doc/](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 `pip install beautifulsoup4`
-        
 
 or
 
 `conda install -c anaconda beautifulsoup4`
   
-
-*   Gecko drivers for my web browser [https://selenium-python.readthedocs.io/installation.html#drivers](https://selenium-python.readthedocs.io/installation.html)
-    *   You have to put the geckodriverbinary in a path Python can see, if my case I have it in ~/anaconda3/bin/ . If this does not work, I have found that putting it in your working directory (the same as the python notebook), should work.
-
-
+  
+4. Gecko drivers for my web browser [https://selenium-python.readthedocs.io/installation.html#drivers](https://selenium-python.readthedocs.io/installation.html)
+    *   You have to put the geckodriverbinary in a path Python can see, if my case I have it in ~/anaconda3/bin/ . If this does not work, I have found that putting it in your working directory (the same as the python notebook), should work.  
+  
+  
 *   Once you have done that, hopefully running the following code snippet:
 ```
 from selenium import webdriver  
