@@ -8,7 +8,7 @@ Prerequisites
 -------------
 ### Please install the following suggested software:
 
-1. [Anaconda3 (for python3 notebooks) (Links to an external site.)](https://www.anaconda.com/download/) We will mainly be using python notebooks for this session.  
+1. [Anaconda3 (for python3 notebooks)](https://www.anaconda.com/download/) We will mainly be using python notebooks for this session.  
   
   
 2. Selenium: [https://selenium-python.readthedocs.io/](https://selenium-python.readthedocs.io/)I usually use pip or conda to install packages: 
