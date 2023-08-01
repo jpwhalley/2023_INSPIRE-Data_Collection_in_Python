@@ -28,7 +28,11 @@ or
 
 `conda install -c anaconda beautifulsoup4`
   
-  
+
+2-3. Alternatively you can install 2-3 from the requirements.txt (especially if you are working with plain python, as this will also install pandas and matplotlib for you)
+
+`pip install -r requirements.txt`
+
 4. Gecko drivers for my web browser [https://selenium-python.readthedocs.io/installation.html#drivers](https://selenium-python.readthedocs.io/installation.html)
     *   You have to put the geckodriverbinary in a path Python can see, if my case I have it in ~/anaconda3/bin/ . If this does not work, I have found that putting it in your working directory (the same as the python notebook), should work.  
   
