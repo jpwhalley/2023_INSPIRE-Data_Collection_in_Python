@@ -7,8 +7,6 @@
 # Ideally the data we wish to work on can be downloaded in an easy to use format. Otherwise when we want only a small subset of a very big dataset, or the data is being constantly updated, hopefully the owner will provide an application programming interface (API) to automate the collection of the relevant data. However quite often the data cannot be downloaded and there is no API, but the data is publicly available, just dispersed across a website. When it would be too tedious and time consuming to navigate page by page to collect the data manually; we can use Selenium Webdriver and Beautiful Soup to automate navigating across the website and collecting of the relevant data. In this code clinic, I will go through the best practices (and what not to do!) when web scraping; using Selenium Webdriver to navigate around a website and then using Beautiful Soup to extract the data from the HTML.
 # 
 
-# In[ ]:
-
 
 from os import path
 
@@ -77,14 +75,10 @@ def get_hap():
         sleep(5 + (randint(1,50) / 25))
 
 
-# In[ ]:
-
 
 # Example collecting KIR haplotypes from allelefrequencies.net
 get_hap()
 
-
-# In[ ]:
 
 
 # Example 2 - Get Library books
@@ -138,15 +132,11 @@ print(df)
 
 # ### Section 0: Load the packages and open a remote controlled browser
 
-# In[ ]:
-
 
 # Import the necessary packages
 from selenium import webdriver
 import requests
 
-
-# In[ ]:
 
 
 # Fire up Selenium webdriver with the website we want to scrape
@@ -162,15 +152,11 @@ browser.get(base_url)
 
 # #### 1.1: Using link text
 
-# In[ ]:
-
 
 # Start navigating around
 element = browser.find_element_by_link_text("Posts")
 print(element)
 
-
-# In[ ]:
 
 
 element.click()
@@ -180,21 +166,15 @@ element.click()
 
 # #### 2.1 Can we get a the literary works, their authors and their date
 
-# In[ ]:
-
 
 # Navigate to Posts
 browser.find_element_by_link_text("Posts").click()
 
 
-# In[ ]:
-
 
 # And now The Literary Clock Library
 browser.find_element_by_link_text("The Literary Clock Library").click()
 
-
-# In[ ]:
 
 
 # Use javascript to click on the element instead
@@ -203,14 +183,10 @@ print(element)
 browser.execute_script("arguments[0].click();", element)
 
 
-# In[ ]:
-
 
 # And now to the 1500s
 browser.find_element_by_link_text("1500s").click()
 
-
-# In[ ]:
 
 
 # Can we grab the plays first performed in the 1500s
@@ -225,21 +201,15 @@ soup = BeautifulSoup(html_source, 'html.parser')
 # soup = BeautifulSoup(html.text, 'html.parser')
 
 
-# In[ ]:
-
 
 # Looking at the 'li' tag
 print(soup.li)
 
 
-# In[ ]:
-
 
 # OK, get all the 'li' tags
 print(soup.findAll('li'))
 
-
-# In[ ]:
 
 
 # Look to see if it is a link or not
@@ -248,16 +218,12 @@ for i in soup.findAll('li'):
     
 
 
-# In[ ]:
-
 
 # So we can filter out by link (and we can also look at the link)
 for i in soup.findAll('li'):
     if i.a != None:
         print(i.a['href'])
 
-
-# In[ ]:
 
 
 books = {}
@@ -278,16 +244,12 @@ for i in soup.findAll('li'):
         counter +=1
 
 
-# In[ ]:
-
 
 # Can now look at this in a dataframe
 import pandas as pd
 df = pd.DataFrame(books).T
 print(df)
 
-
-# In[ ]:
 
 
 # OK, lets add the 1600s
@@ -321,8 +283,6 @@ print(df)
 
 
 # #### 2.2 Automatically get all the literary works, their authors and their date
-
-# In[ ]:
 
 
 # OK let's go back to the 1500s and try get them all
@@ -359,14 +319,10 @@ while carry_on:
         carry_on=False
 
 
-# In[ ]:
-
 
 df = pd.DataFrame(books).T
 print(df)
 
-
-# In[ ]:
 
 
 # OK, lets check how best to collect the data
@@ -404,8 +360,6 @@ for century in ['/1500', '/1600', '/1700']:
 df = pd.DataFrame(books).T
 print(df)
 
-
-# In[ ]:
 
 
 # Now for the 1800s, 1900s and 2000s
@@ -453,27 +407,19 @@ for century in ['/1800', '/1900', '/2000']:
 df = pd.DataFrame(books).T
 
 
-# In[ ]:
-
 
 # Look to quickly plot the distribution of years
 df['Year'] = df['Year'].astype('int')
 df.hist(column='Year', bins=80)
 
 
-# In[ ]:
-
 
 df
 
 
-# In[ ]:
-
 
 to_do
 
-
-# In[ ]:
 
 
 
