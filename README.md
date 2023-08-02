@@ -21,7 +21,7 @@ Prerequisites
 ```
 from selenium import webdriver  
 browser = webdriver.Chrome() # Or which ever web browser you are using  
-browser.get("[https://www.literaryclock.com](https://www.literaryclock.com/)/“)
+browser.get('https://www.literaryclock.com/')
 ```
 you should get a pop-up window of the [Literary Clock website](http://www.literaryclock.com/).
 
