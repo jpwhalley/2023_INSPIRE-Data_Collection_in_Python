@@ -27,6 +27,7 @@ you should get a pop-up window of the [Literary Clock website](http://www.litera
 
 Recommended tutorial and reading
 --------------------------------
+* This is a session from a longer course: Data Science in Python, which you can find [here](https://github.com/jpwhalley/Data_science_in_Python_2022).
 *    Experience in Python will be a bonus. For those new to Python, I recommend them running through the Learn Python “Learn the Basics” and “Data Science Tutorials” chapters, before the module: https://www.learnpython.org/ 
 *   A good example of scientific work based on web scraping can be found here: [Soft Drinks Industry Levy paper.](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003025)
 *   Another good example of web scraping is the COVID-19 cumulative trackers, for example [Jon Hopkins COVID-19 Dashboard](https://www.arcgis.com/apps/dashboards/bda7594740fd40299423467b48e9ecf6), as published [here](https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30120-1/fulltext), with [Github repository.](https://github.com/CSSEGISandData/COVID-19)
